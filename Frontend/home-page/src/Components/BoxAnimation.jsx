@@ -9,7 +9,7 @@ const DotPattern = (props) => {
   return (
     <div className={`dot-container-${direction}`}>
       {Array.from({ length: rows }).map((_, rowIndex) => (
-        <div key={rowIndex} className={`row_dot_${direction}`}>
+        <div key={rowIndex} className="row_dot">
           {Array.from({ length: columns }).map((_, colIndex) => (
             <div key={colIndex} className="dot"></div>
           ))}
@@ -22,7 +22,7 @@ const DotPattern = (props) => {
 const BoxAnimation = (props) => {
   const direction = props.direction;
   return (
-    <div className={`dot_main_${direction}`}>
+    <div className="dot_main">
       <DotPattern direction={direction} />
     </div>
   );

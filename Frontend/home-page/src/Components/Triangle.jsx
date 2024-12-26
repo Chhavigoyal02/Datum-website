@@ -1,11 +1,11 @@
 import React from 'react'
 import './Triangle.css';
 
-const Triangle = () => {
+const Triangle = (props) => {
+  const color = props.color;
   return (
     <div>
-      <div className="shape">
-        <div className="border-tri"></div>
+      <div className={`shape-${color}`}>
       </div>
     </div>
   )

@@ -1,9 +1,13 @@
-.shape {
+.shape-blue,.shape-yellow{
     width: 200px;
     height: 200px;
     clip-path: polygon(12% 19%, 0 100%, 100% 78%);
     background-color: #136FDE;
     animation: rotate 5s infinite;
+    filter: drop-shadow(2px 2px 5px black);
+}
+.shape-yellow{
+    background-color: #F5C93F;
 }
 
 @keyframes rotate {

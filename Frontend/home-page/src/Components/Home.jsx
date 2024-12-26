@@ -24,7 +24,7 @@ const Home = () => {
                     <BoxAnimation direction={"moveDown"}></BoxAnimation>
                   </div>
                   <div> 
-                    <Triangle></Triangle>
+                    <Triangle color={'blue'}></Triangle>
                   </div>
                 </div>
                 <div className="col-md-6">
@@ -36,10 +36,10 @@ const Home = () => {
                 </div>
                 <div className="col-md-3 rgt-animation">
                   <div>
-                    
+                    <BoxAnimation direction={"moveUp"}></BoxAnimation>
                   </div>
                   <div>
-                    <BoxAnimation direction={"moveUp"}></BoxAnimation>
+                  <Triangle color={'yellow'}></Triangle>
                   </div>
                   <div>
                     <div className='rgt-box'></div>

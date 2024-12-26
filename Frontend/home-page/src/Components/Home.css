@@ -19,6 +19,7 @@
     margin-left: 35px;
     margin-top: 20px;
     overflow: hidden;
+    overflow-x: hidden;
 }
 .grid{
     width: 100%;
@@ -91,17 +92,21 @@
     0 0 70px #FF13F0;
 }
 .lft-animation > div:nth-of-type(3){
-    border: 2px solid red;
+    padding-top: 150px;
 }
 .rgt-animation{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content:space-between;
     align-items: end;
 }
 .rgt-animation > div:nth-of-type(2){
+    /* border: 2px solid red; */
+}
+.rgt-animation > div:nth-of-type(3){
     width: 150px;
     height: 30px;
+    margin-bottom: 100px;
     background-color: whitesmoke;
     margin-right: -10px;
     animation: RightLeft 10s infinite ease-in-out;
@@ -112,6 +117,7 @@
     0 0 50px #30A9BC,
     0 0 70px #30A9BC;
 }
+
 @keyframes gridMove {
     0% {
         background-position: top center; 
